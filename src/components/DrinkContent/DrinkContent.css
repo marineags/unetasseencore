@@ -1,0 +1,167 @@
+.drink-content {
+  
+  margin: 0 auto;
+  padding: 30px 40px;
+  color: #3b261d;
+}
+
+.drink-content h1 {
+  font-size: 100px;
+  margin-bottom: 1px;
+  margin-top: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+h1 {
+  font-family: "url(../../assets/fonts/merosa/Merosa.otf)", cursive;
+}
+
+.drink-content > p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b5146;
+  margin-bottom: 50px;
+}
+
+.drink-content h2 {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.drink-content ul,
+.drink-content ol {
+  padding-left: 24px;
+  margin: 0;
+}
+
+.drink-content li {
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.drink-content ul li::marker {
+  color: #9b6a4d;
+}
+
+.drink-content ol li::marker {
+  color: #9b6a4d;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .drink-content {
+    padding: 40px 20px;
+  }
+
+  .drink-content h1 {
+    font-size: 36px;
+  }
+
+  .drink-content > p {
+    font-size: 16px;
+  }
+
+  .drink-content h2 {
+    font-size: 22px;
+  }
+
+  .drink-content li {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+  .drink-details {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+}
+
+@font-face {
+  font-family: "Nahla Script";
+  src: url("../../assets/fonts/Nahla Script.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.drink-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.ingredients {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.recipe {
+  text-align: left;
+   margin-left: -400px;
+  margin-top: 30px;
+}
+
+.drink-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.recipe {
+  border-left: 1px solid #b89b8c;
+  padding-left: 60px;
+}
+
+.drink-content {
+  animation: drinkChange 0.55s ease;
+}
+
+@keyframes drinkChange {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(15px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+.drink-content.exit {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+.drink-content.enter {
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(120px);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
