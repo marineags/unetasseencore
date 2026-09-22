@@ -12,7 +12,7 @@ textColor: string;
 
 export const drinks: Drink[] = [
   {
-    name: "Chocolat chaud",
+    name: "Chocolat Chaud",
     image: "/images/chocolat.png",
     color: "#401717",
     background: "#A98385",
@@ -64,7 +64,7 @@ export const drinks: Drink[] = [
   },
 
   {
-    name: "Thé aux épices",
+    name: "Thé Aux Épices",
     image: "/images/the.png",
     color: "#AB6951",
     background: "rgb(97, 39, 39)",
@@ -93,7 +93,7 @@ export const drinks: Drink[] = [
   },
 
   {
-    name: "Vin chaud",
+    name: "Vin Chaud",
     image: "/images/vin.png",
     color: "#6A0409",
     background: "#A85E63",
@@ -124,7 +124,7 @@ export const drinks: Drink[] = [
   },
 
   {
-    name: "Chocolat viennois",
+    name: "Chocolat Viennois",
     image: "/images/vienois.png",
     color: "#DC7E27",
     background: "#EDC29A",
