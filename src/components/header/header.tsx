@@ -1,17 +1,10 @@
-import "./Header.css";
+import "./header.css";
+
 
 function Header() {
   return (
 <header className="header">
-  <div className="logo">Une Tasse Encore</div>
-
-  <nav className="nav">
-    <a href="#home">Accueil</a>
-    <a href="#recettes">Recettes</a>
-    <a href="#about">À propos</a>
-  
-  </nav>
-
+ 
   <div className="awning">
   {Array.from({ length: 14 }).map((_, index) => (
     <span
@@ -20,7 +13,7 @@ function Header() {
     />
   ))}
 </div>
-<div className="logo">TEST</div>
+
 </header>
   );
 }

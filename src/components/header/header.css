@@ -3,21 +3,21 @@
   z-index: 9999;
 
   width: 100%;
-  padding: 20px 20px;
+  padding: 40px;
   box-sizing: border-box;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  color: #3b261d;
+  color: #F4EBDD;
 
   background: repeating-linear-gradient(
     90deg,
-    #e43b32 0px,
-    #e43b32 80px,
-    #f7efe7 80px,
-    #f7efe7 160px
+    #3A1012 0,
+    #3A1012 105px,
+  #F4EBDD 105px,
+  #F4EBDD 210px
   );
 }
 
@@ -27,24 +27,29 @@
   left: 0;
 
   width: 100%;
-  height: 30px;
+  height: 80px;
 
   display: flex;
+
+  overflow: hidden;
 }
 
 .awning span {
-  flex: 1;
-  height: 30px;
+  flex: 0 0 105px;
+  height: 40px;
 
   border-radius: 0 0 999px 999px;
 
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.248);
 }
 
 .awning-red {
-  background-color: #e43b32;
+  background-color: #3A1012;
 }
 
 .awning-white {
-  background-color: #f7efe7;
+  background-color: #F4EBDD;
 }
+
+
+

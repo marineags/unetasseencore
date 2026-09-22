@@ -24,36 +24,39 @@ function DrinkContent({ drink }: Props) {
   }, [drink, displayedDrink.name]);
 
   return (
-    <section className={`drink-content ${animation}`}>
-      <h1>{displayedDrink.name}</h1>
+  <section
+    className={`drink-content ${animation}`}
+    style={{
+      color: displayedDrink.textColor,
+    }}
+  >
+    <h1>{displayedDrink.name}</h1>
 
-      
+    <p>{displayedDrink.description}</p>
 
-      <p>{displayedDrink.description}</p>
+    <div className="drink-details">
+      <div className="ingredients">
+        <h2>Ingrédients</h2>
 
-      <div className="drink-details">
-        <div className="ingredients">
-          <h2>Ingrédients</h2>
-
-          <ul>
-            {displayedDrink.ingredients.map((ingredient, index) => (
-              <li key={index}>{ingredient}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="recipe">
-          <h2>Recette</h2>
-
-          <ol>
-            {displayedDrink.recipe.map((step, index) => (
-              <li key={index}>{step}</li>
-            ))}
-          </ol>
-        </div>
+        <ul>
+          {displayedDrink.ingredients.map((ingredient, index) => (
+            <li key={index}>{ingredient}</li>
+          ))}
+        </ul>
       </div>
-    </section>
-  );
+
+      <div className="recipe">
+        <h2>Recette</h2>
+
+        <ol>
+          {displayedDrink.recipe.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
+);
 }
 
 export default DrinkContent;
