@@ -78,8 +78,8 @@
 .carousel-buttons {
   position: absolute;
 
-  left: -10px;
-  top: 170px;
+  left: 90px;
+  top: 150px;
 
   display: flex;
   gap: 15px;
